@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import Button from "next_core_mf/Button";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,6 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
+        <h1>NEXT PLATFORM MF</h1>
+        <Button></Button>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
@@ -26,7 +28,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -110,5 +112,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
